@@ -60,6 +60,8 @@ namespace YouTubePlayerEX.Desktop.Deploy
         /// </summary>
         public static void Main(string[] args)
         {
+            Console.InputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             interactive = args.Length == 0;
 
             findSolutionPath();
