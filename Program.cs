@@ -117,22 +117,6 @@ namespace YouTubePlayerEX.Desktop.Deploy
                     builder = new WindowsBuilder(version);
                     break;
 
-                case RuntimeInfo.Platform.Linux:
-                    builder = new LinuxBuilder(version);
-                    break;
-
-                case RuntimeInfo.Platform.macOS:
-                    builder = new MacOSBuilder(version, getArg(3));
-                    break;
-
-                case RuntimeInfo.Platform.iOS:
-                    builder = new IOSBuilder(version);
-                    break;
-
-                case RuntimeInfo.Platform.Android:
-                    builder = new AndroidBuilder(version, getArg(0));
-                    break;
-
                 default:
                     throw new PlatformNotSupportedException(targetPlatform.ToString());
             }
