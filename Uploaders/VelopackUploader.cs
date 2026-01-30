@@ -31,6 +31,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Uploaders
         {
             if (Program.CanGitHub)
             {
+                /*
                 Program.RunCommand("dotnet", $"vpk download github"
                                              + $" --repoUrl=\"{Program.GitHubRepoUrl}\""
                                              + $" --token=\"{Program.GitHubAccessToken}\""
@@ -39,6 +40,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Uploaders
                                              + " --pre",
                     throwIfNonZero: false,
                     useSolutionPath: false);
+                */
             }
         }
 
