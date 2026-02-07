@@ -96,9 +96,7 @@ namespace YouTubePlayerEX.Desktop.Deploy
             var targetPlatform = RuntimeInfo.OS;
 
             if (args.Length > 1 && !string.IsNullOrEmpty(args[1]))
-                version = args[1];
-            if (args.Length > 2 && !string.IsNullOrEmpty(args[2]))
-                Enum.TryParse(args[2], true, out targetPlatform);
+                Enum.TryParse(args[1], true, out targetPlatform);
 
             Console.ResetColor();
             Console.WriteLine($"Increment Version:     {IncrementVersion}");
@@ -117,6 +115,10 @@ namespace YouTubePlayerEX.Desktop.Deploy
             {
                 case RuntimeInfo.Platform.Windows:
                     builder = new WindowsBuilder(version);
+                    break;
+
+                case RuntimeInfo.Platform.Linux:
+                    builder = new LinuxBuilder(version);
                     break;
 
                 default:
