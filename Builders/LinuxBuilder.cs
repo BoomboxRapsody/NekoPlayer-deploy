@@ -71,7 +71,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Builders
 
             copyDirectory(Path.Combine(Program.TemplatesPath, app_dir), stagingTarget, true);
 
-            File.CreateSymbolicLink(Path.Combine(stagingTarget, ".DirIcon"), "YouTubePlayerEX.png");
+            File.CreateSymbolicLink(Path.Combine(stagingTarget, ".DirIcon"), "youtube-player-ex.png");
 
             File.AppendAllLines(Path.Combine(stagingTarget, "YouTubePlayerEX.desktop"), new[]
             {

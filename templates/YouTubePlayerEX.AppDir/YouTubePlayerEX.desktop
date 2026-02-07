@@ -1,0 +1,13 @@
+# Desktop Entry Specification: https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html
+[Desktop Entry]
+Version=1.5
+Type=Application
+Name=YouTube Player EX
+Comment=The enhanced YouTube video player
+Icon=youtube-player-ex
+Exec=YouTubePlayerEX %u
+Terminal=false
+Categories=AudioVideo;
+StartupWMClass=YouTubePlayerEX
+SingleMainWindow=true
+StartupNotify=true

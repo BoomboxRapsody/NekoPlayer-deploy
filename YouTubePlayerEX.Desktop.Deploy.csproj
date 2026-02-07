@@ -34,7 +34,7 @@
     <None Update="tools\rcedit-x64.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="osu!.AppDir-template.zip">
+    <None Update="YouTubePlayerEX.AppDir-template.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
