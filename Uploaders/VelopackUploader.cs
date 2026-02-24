@@ -51,7 +51,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Uploaders
         {
             Program.RunCommand("dotnet", $"vpk [{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
-                                         + $" --packAuthors=\"NekoNeru Studios\""
+                                         + $" --packAuthors=\"MayoDev Studios\""
                                          + $" --packId=\"{Program.PackageName}\""
                                          + $" --packVersion=\"{version}\""
                                          + $" --runtime=\"{runtimeIdentifier}\""
