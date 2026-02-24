@@ -25,7 +25,7 @@ namespace YouTubePlayerEX.Desktop.Deploy
         public static string ReleasesPath => Path.Combine(Environment.CurrentDirectory, RELEASES_FOLDER);
 
         public static string SolutionName => GetConfiguration("SolutionName");
-        public static string ProjectName => GetConfiguration("ProjectName");
+        public static string ProjectName { get; set; } = GetConfiguration("ProjectName");
         public static string PackageName => GetConfiguration("PackageName");
         public static string IconName => GetConfiguration("IconName");
 
@@ -114,10 +114,12 @@ namespace YouTubePlayerEX.Desktop.Deploy
             switch (targetPlatform)
             {
                 case RuntimeInfo.Platform.Windows:
+                    ProjectName = "YouTubePlayerEX.Windows";
                     builder = new WindowsBuilder(version);
                     break;
 
                 case RuntimeInfo.Platform.Linux:
+                    ProjectName = "YouTubePlayerEX.Linux";
                     builder = new LinuxBuilder(version);
                     break;
 

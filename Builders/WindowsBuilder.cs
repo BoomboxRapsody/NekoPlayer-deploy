@@ -19,7 +19,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Builders
         {
         }
 
-        protected override string TargetFramework => "net8.0";
+        protected override string TargetFramework => "net8.0-windows10.0.22000.0";
         protected override string RuntimeIdentifier => $"{os_name}-x64";
 
         public override Uploader CreateUploader()
