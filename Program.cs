@@ -114,7 +114,7 @@ namespace YouTubePlayerEX.Desktop.Deploy
             switch (targetPlatform)
             {
                 case RuntimeInfo.Platform.Windows:
-                    ProjectName = "YouTubePlayerEX.Windows";
+                    ProjectName = "YouTubePlayerEX.Desktop.Windows";
                     builder = new WindowsBuilder(version);
                     break;
 
