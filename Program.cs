@@ -119,7 +119,6 @@ namespace YouTubePlayerEX.Desktop.Deploy
                     break;
 
                 case RuntimeInfo.Platform.Linux:
-                    ProjectName = "YouTubePlayerEX.Linux";
                     builder = new LinuxBuilder(version);
                     break;
 
