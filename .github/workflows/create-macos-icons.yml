@@ -10,10 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: ilammy/setup-nasm@v1
-
       - name: Create icon
-        run: osu.Framework.NativeLibs/scripts/ffmpeg/build-macOS.sh
+        run: png_to_icns.sh
         env:
           arch: arm64
 
