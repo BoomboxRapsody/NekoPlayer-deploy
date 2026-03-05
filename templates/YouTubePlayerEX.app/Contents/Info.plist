@@ -11,7 +11,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>youtube-player-ex</string>
 	<key>CFBundleIconFile</key>
-	<string>osu.icns</string>
+	<string>icon.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>io.mayodev.youtubeplayerex</string>
 	<key>CFBundleInfoDictionaryVersion</key>
