@@ -9,6 +9,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      - name: Add permission to icon maker
+        run: chmod -x ./png_to_icns.sh
+        env:
+          arch: arm64
 
       - name: Create icon
         run: ./png_to_icns.sh
