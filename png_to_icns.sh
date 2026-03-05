@@ -15,12 +15,6 @@ usageFunction()
    exit 1
 }
 
-# If no option were passed display usage and exit
-if [[ $1 == "" ]]
-then
-    usageFunction
-fi
-
 # Iterate over script options
 while getopts "hi:" opt; do
    case "$opt" in
