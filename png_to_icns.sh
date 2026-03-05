@@ -62,6 +62,10 @@ done
 output_iconset_name="${icon_name}.iconset"
 
 # Create the temp directory to save the icon sizes
+mkdir icons
+
+cd icons
+
 mkdir $output_iconset_name
 
 # Create the icon sizes
@@ -82,8 +86,10 @@ iconutil -c icns $output_iconset_name
 # Delete the temp folder
 rm -R $output_iconset_name
 
+cd ..
+
 # Echo result status
-icon_path="${icon_name}.${icon_extension}"
+icon_path="icons/${icon_name}.${icon_extension}"
 if [ -f "$icon_path" ]
 then
     echo "INFO: The icon has been successfully created: ./${icon_path}"
