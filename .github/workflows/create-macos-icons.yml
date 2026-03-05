@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create icon
-        run: png_to_icns.sh
+        run: ./png_to_icns.sh
         env:
           arch: arm64
 
