@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="Project">
     <TargetFramework>net8.0</TargetFramework>
     <OutputType>Exe</OutputType>
@@ -37,5 +37,8 @@
     <None Update="YouTubePlayerEX.AppDir-template.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="templates\YouTubePlayerEX.app\Contents\" />
   </ItemGroup>
 </Project>
