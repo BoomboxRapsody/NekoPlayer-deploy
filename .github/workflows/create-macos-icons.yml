@@ -1,0 +1,24 @@
+name: Build FFmpeg
+on: workflow_dispatch
+
+jobs:
+  create-macos-icons:
+    name: Create icons for macOS
+    runs-on: macos-26
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: ilammy/setup-nasm@v1
+
+      - name: Create icon
+        run: osu.Framework.NativeLibs/scripts/ffmpeg/build-macOS.sh
+        env:
+          arch: arm64
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-icons
+          path: icons.icns
