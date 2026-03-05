@@ -1,4 +1,4 @@
-name: Build FFmpeg
+name: Create icons for macOS
 on: workflow_dispatch
 
 jobs:
