@@ -83,9 +83,6 @@ sips -z 1024 1024 -s format png "../$image_path" --out "${output_iconset_name}/i
 # Create the iconset
 iconutil -c icns $output_iconset_name
 
-# Delete the temp folder
-rm -R $output_iconset_name
-
 cd ..
 
 # Echo result status
