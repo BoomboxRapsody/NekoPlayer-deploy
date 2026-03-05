@@ -23,7 +23,7 @@ while getopts "hi:" opt; do
    esac
 done
 
-image_path="./logo.png"
+image_path="../logo.png"
 
 # if empty image_path, display error message and usage
 if [ -z "$image_path" ]
