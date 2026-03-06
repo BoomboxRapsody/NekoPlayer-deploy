@@ -4,14 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using YouTubePlayerEX.Desktop.Deploy.Uploaders;
+using NekoPlayer.Desktop.Deploy.Uploaders;
 
-namespace YouTubePlayerEX.Desktop.Deploy.Builders
+namespace NekoPlayer.Desktop.Deploy.Builders
 {
     public class LinuxBuilder : Builder
     {
-        private const string app_dir = "YouTubePlayerEX.AppDir";
-        private const string app_name = "YouTubePlayerEX";
+        private const string app_dir = "NekoPlayer.AppDir";
+        private const string app_name = "NekoPlayer";
         private const string os_name = "linux";
 
         private readonly string stagingTarget;
@@ -73,7 +73,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Builders
 
             File.CreateSymbolicLink(Path.Combine(stagingTarget, ".DirIcon"), "youtube-player-ex.png");
 
-            File.AppendAllLines(Path.Combine(stagingTarget, "YouTubePlayerEX.desktop"), new[]
+            File.AppendAllLines(Path.Combine(stagingTarget, "NekoPlayer.desktop"), new[]
             {
                 $"X-AppImage-Version={Version}"
             });

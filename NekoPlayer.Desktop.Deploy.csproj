@@ -34,11 +34,11 @@
     <None Update="tools\rcedit-x64.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="YouTubePlayerEX.AppDir-template.zip">
+    <None Update="NekoPlayer.AppDir-template.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="templates\YouTubePlayerEX.app\Contents\" />
+    <Folder Include="templates\NekoPlayer.app\Contents\" />
   </ItemGroup>
 </Project>

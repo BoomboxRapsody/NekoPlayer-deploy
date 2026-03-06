@@ -4,13 +4,13 @@
 using System;
 using System.IO;
 using System.Linq;
-using YouTubePlayerEX.Desktop.Deploy.Uploaders;
+using NekoPlayer.Desktop.Deploy.Uploaders;
 
-namespace YouTubePlayerEX.Desktop.Deploy.Builders
+namespace NekoPlayer.Desktop.Deploy.Builders
 {
     public class WindowsBuilder : Builder
     {
-        private const string app_name = "YouTubePlayerEX.exe";
+        private const string app_name = "NekoPlayer.exe";
         private const string os_name = "win";
         private const string channel = "win";
 
@@ -60,7 +60,7 @@ namespace YouTubePlayerEX.Desktop.Deploy.Builders
             AttachSatoriGC();
 
             bool rcEditCommand =
-                Program.RunCommand("tools/rcedit-x64.exe", $"\"{Path.Combine(Program.StagingPath, "YouTubePlayerEX.exe")}\""
+                Program.RunCommand("tools/rcedit-x64.exe", $"\"{Path.Combine(Program.StagingPath, "NekoPlayer.exe")}\""
                                                            + $" --set-icon \"{IconPath}\"",
                     exitOnFail: false);
 
@@ -70,12 +70,12 @@ namespace YouTubePlayerEX.Desktop.Deploy.Builders
                 // TODO: Should probably change this to use RuntimeInfo.OS checks instead of fail values
                 bool wineRcEditCommand =
                     Program.RunCommand("wine", $"\"{Path.GetFullPath("tools/rcedit-x64.exe")}\""
-                                               + $" \"{Path.Combine(Program.StagingPath, "YouTubePlayerEX.exe")}\""
+                                               + $" \"{Path.Combine(Program.StagingPath, "NekoPlayer.exe")}\""
                                                + $" --set-icon \"{IconPath}\"",
                         exitOnFail: false);
 
                 if (!wineRcEditCommand)
-                    Logger.Error("Failed to set icon on YouTubePlayerEX.exe");
+                    Logger.Error("Failed to set icon on NekoPlayer.exe");
             }
         }
     }

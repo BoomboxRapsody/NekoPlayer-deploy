@@ -4,7 +4,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace YouTubePlayerEX.Desktop.Deploy
+namespace NekoPlayer.Desktop.Deploy
 {
     public class GitHubRelease
     {

@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>YouTubePlayerEX</string>
+	<string>NekoPlayer</string>
 	<key>CFBundleName</key>
-	<string>YouTube Player EX</string>
+	<string>NekoPlayer</string>
 	<key>CFBundleGetInfoString</key>
 	<string>youtube-player-ex</string>
 	<key>CFBundleIconFile</key>
 	<string>icon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>io.mayodev.youtubeplayerex</string>
+	<string>io.mayodev.nekoplayer</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>0.0</string>
 	<key>CFBundlePackageType</key>

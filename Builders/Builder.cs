@@ -4,10 +4,10 @@
 using System;
 using System.IO;
 using System.IO.Compression;
-using YouTubePlayerEX.Desktop.Deploy.Uploaders;
+using NekoPlayer.Desktop.Deploy.Uploaders;
 using osu.Framework.IO.Network;
 
-namespace YouTubePlayerEX.Desktop.Deploy.Builders
+namespace NekoPlayer.Desktop.Deploy.Builders
 {
     public abstract class Builder
     {

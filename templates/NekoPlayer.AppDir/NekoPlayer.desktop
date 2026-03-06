@@ -2,12 +2,12 @@
 [Desktop Entry]
 Version=1.5
 Type=Application
-Name=YouTube Player EX
+Name=NekoPlayer
 Comment=The enhanced YouTube video player
 Icon=youtube-player-ex
-Exec=YouTubePlayerEX %u
+Exec=NekoPlayer %u
 Terminal=false
 Categories=AudioVideo;
-StartupWMClass=YouTubePlayerEX
+StartupWMClass=NekoPlayer
 SingleMainWindow=true
 StartupNotify=true

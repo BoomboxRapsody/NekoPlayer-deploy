@@ -3,14 +3,14 @@
 
 using System;
 using System.IO;
-using YouTubePlayerEX.Desktop.Deploy.Uploaders;
+using NekoPlayer.Desktop.Deploy.Uploaders;
 
-namespace YouTubePlayerEX.Desktop.Deploy.Builders
+namespace NekoPlayer.Desktop.Deploy.Builders
 {
     public class MacOSBuilder : Builder
     {
-        private const string app_dir = "YouTubePlayerEX.app";
-        private const string app_name = "YouTube Player EX";
+        private const string app_dir = "NekoPlayer.app";
+        private const string app_name = "NekoPlayer";
         private const string os_name = "osx";
 
         private readonly string stagingTarget;

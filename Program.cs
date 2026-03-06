@@ -7,12 +7,12 @@ using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using YouTubePlayerEX.Desktop.Deploy.Builders;
-using YouTubePlayerEX.Desktop.Deploy.Uploaders;
+using NekoPlayer.Desktop.Deploy.Builders;
+using NekoPlayer.Desktop.Deploy.Uploaders;
 using osu.Framework;
 using osu.Framework.IO.Network;
 
-namespace YouTubePlayerEX.Desktop.Deploy
+namespace NekoPlayer.Desktop.Deploy
 {
     internal static class Program
     {
@@ -114,7 +114,7 @@ namespace YouTubePlayerEX.Desktop.Deploy
             switch (targetPlatform)
             {
                 case RuntimeInfo.Platform.Windows:
-                    ProjectName = "YouTubePlayerEX.Desktop.Windows";
+                    ProjectName = "NekoPlayer.Desktop.Windows";
                     builder = new WindowsBuilder(version);
                     break;
 
@@ -179,9 +179,9 @@ namespace YouTubePlayerEX.Desktop.Deploy
                 if (File.Exists(Path.Combine(path, $"{SolutionName}.sln")))
                     break;
 
-                if (Directory.Exists(Path.Combine(path, "YouTubePlayerEX")) && File.Exists(Path.Combine(path, "YouTubePlayerEX", $"{SolutionName}.sln")))
+                if (Directory.Exists(Path.Combine(path, "NekoPlayer")) && File.Exists(Path.Combine(path, "NekoPlayer", $"{SolutionName}.sln")))
                 {
-                    path = Path.Combine(path, "YouTubePlayerEX");
+                    path = Path.Combine(path, "NekoPlayer");
                     break;
                 }
 

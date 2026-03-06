@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubePlayerEX.Desktop.Deploy", "YouTubePlayerEX.Desktop.Deploy.csproj", "{75DC89A6-6BE5-4D32-8151-2A552413533F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NekoPlayer.Desktop.Deploy", "NekoPlayer.Desktop.Deploy.csproj", "{75DC89A6-6BE5-4D32-8151-2A552413533F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

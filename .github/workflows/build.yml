@@ -11,4 +11,4 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '8.0.x'
-    - run: dotnet build YouTubePlayerEX-deploy.sln
+    - run: dotnet build NekoPlayer-deploy.sln

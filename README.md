@@ -1,8 +1,8 @@
-# YouTubePlayerEX-deploy
+# NekoPlayer-deploy
 
 Deploy task for [NekoPlayer](https://github.com/BoomboxRapsody/YouTubePlayerEX).
 
-This is what creates installable copies of YouTube Player EX.
+This is what creates installable copies of NekoPlayer.
 
 Made for internal use; as such documentation is not provided. YMMV.
 
