@@ -1,6 +1,6 @@
 # NekoPlayer-deploy
 
-Deploy task for [NekoPlayer](https://github.com/BoomboxRapsody/YouTubePlayerEX).
+Deploy task for [NekoPlayer](https://github.com/BoomboxRapsody/NekoPlayer).
 
 This is what creates installable copies of NekoPlayer.
 
