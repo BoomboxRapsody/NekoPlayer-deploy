@@ -51,7 +51,7 @@ namespace NekoPlayer.Desktop.Deploy.Uploaders
         {
             Program.RunCommand("dotnet", $"vpk [{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
-                                         + $" --packAuthors=\"MayoDev Studios\""
+                                         + $" --packAuthors=\"Mocha Studio by BoomboxRapsody\""
                                          + $" --packId=\"{Program.PackageName}\""
                                          + $" --packVersion=\"{version}\""
                                          + $" --runtime=\"{runtimeIdentifier}\""
