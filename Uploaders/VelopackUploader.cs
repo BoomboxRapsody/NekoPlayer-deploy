@@ -45,13 +45,13 @@ namespace NekoPlayer.Desktop.Deploy.Uploaders
         }
 
         // influences the name of the .app bundle. but needs to be osu!(lazer) for windows shortcuts
-        protected virtual string PackTitle => "MochaPlayer";
+        protected virtual string PackTitle => "NekoPlayer";
 
         public override void PublishBuild(string version)
         {
             Program.RunCommand("dotnet", $"vpk [{operatingSystemName}] pack"
                                          + $" --packTitle=\"{PackTitle}\""
-                                         + $" --packAuthors=\"MayoDev Studios\""
+                                         + $" --packAuthors=\"Mocha Studio\""
                                          + $" --packId=\"{Program.PackageName}\""
                                          + $" --packVersion=\"{version}\""
                                          + $" --runtime=\"{runtimeIdentifier}\""
