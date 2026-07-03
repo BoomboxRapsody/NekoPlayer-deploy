@@ -81,7 +81,7 @@ namespace NekoPlayer.Desktop.Deploy
 
                 Logger.Write(lastRelease == null
                     ? "This is the first GitHub release"
-                    : $"Last GitHub release was {lastRelease.Name}.");
+                    : $"Last GitHub release was {lastRelease.TagName}.");
             }
 
             //increment build number until we have a unique one.
