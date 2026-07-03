@@ -12,7 +12,7 @@ namespace NekoPlayer.Desktop.Deploy
         public int Id;
 
         [JsonProperty("tag_name")]
-        public string TagName => $"{Name}";
+        public string TagName = string.Empty;
 
         [JsonProperty("name")]
         public string Name = string.Empty;
