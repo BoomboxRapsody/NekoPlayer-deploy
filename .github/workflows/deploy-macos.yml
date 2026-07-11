@@ -19,6 +19,9 @@ jobs:
           env:
             arch: arm64
             
+      - name: Fork App Repository
+          run: git clone https://github.com/BoomboxRapsody/NekoPlayer
+            
       - name: Pre-builder Setup 
           run: dotnet build NekoPlayer-deploy.sln
           env:
