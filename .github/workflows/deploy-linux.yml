@@ -1,0 +1,30 @@
+name: Deploy (Linux)
+on: workflow_dispatch
+
+jobs:
+  deploy-macos:
+    name: Deploy (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+          uses: actions/checkout@main
+          
+      - name: Setup .NET
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: '8.0.x'
+            
+      - name: Velopack Setup
+          run: dotnet tool install -g vpk
+            
+      - name: Pre-builder Setup 
+          run: dotnet build NekoPlayer-deploy.sln
+            
+      - name: Build
+          run: ./bin/Debug/net8.0/NekoPlayer.Desktop.Deploy
+    
+      - name: Upload
+          uses: actions/upload-artifact@v4
+          with:
+            name: macos-release
+            path: ./bin/Debug/net8.0/releases/

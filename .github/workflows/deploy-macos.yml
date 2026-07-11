@@ -1,0 +1,36 @@
+name: Deploy (macOS)
+on: workflow_dispatch
+
+jobs:
+  deploy-macos:
+    name: Deploy (macOS)
+    runs-on: macos-26
+    steps:
+      - name: Checkout
+          uses: actions/checkout@main
+          
+      - name: Setup .NET
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: '8.0.x'
+            
+      - name: Velopack Setup
+          run: dotnet tool install -g vpk
+          env:
+            arch: arm64
+            
+      - name: Pre-builder Setup 
+          run: dotnet build NekoPlayer-deploy.sln
+          env:
+            arch: arm64
+            
+      - name: Build
+          run: ./bin/Debug/net8.0/NekoPlayer.Desktop.Deploy
+          env:
+            arch: arm64
+    
+      - name: Upload
+          uses: actions/upload-artifact@v4
+          with:
+            name: macos-release
+            path: ./bin/Debug/net8.0/releases/
