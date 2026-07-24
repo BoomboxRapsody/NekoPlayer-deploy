@@ -114,7 +114,6 @@ namespace NekoPlayer.Desktop.Deploy
             switch (targetPlatform)
             {
                 case RuntimeInfo.Platform.Windows:
-                    ProjectName = "NekoPlayer.Desktop.Windows";
                     builder = new WindowsBuilder(version);
                     break;
 
